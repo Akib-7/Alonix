@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
-import S2 from "../assets/S2.png";
-import S3 from "../assets/S3.png";
-import S4 from "../assets/S4.png";
-import S6 from "../assets/S6.png";
+import S2 from "../assets/s2.png";
+import S3 from "../assets/s3.png";
+import S4 from "../assets/s4.png";
+import S6 from "../assets/s6.png";
 import gsap from "gsap";
 
 import { useGSAP } from "@gsap/react";
