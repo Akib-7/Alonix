@@ -124,8 +124,8 @@ const Services = () => {
     scrollbarWidth: "none", // For Firefox
     msOverflowStyle: "none",
     backgroundImage: `
-      linear-gradient(0deg, transparent 99%, rgba(41, 37, 36, 0.3) 50%),
-      linear-gradient(90deg, transparent 99%, rgba(41, 37, 36, 0.3) 50%)
+      linear-gradient(0deg, transparent 95%, rgba(41, 37, 36, 0.3) 50%),
+      linear-gradient(90deg, transparent 95%, rgba(41, 37, 36, 0.3) 50%)
     `,
     backgroundSize:
       "50px 50px" /* Adjust size for the checkered pattern (thicker lines) */,

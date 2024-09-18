@@ -26,7 +26,7 @@ const Products = () => {
         rotate: 0,
       },
       {
-        scale: 5.8,
+        scale: 7.3,
         rotate: 270,
         ease: "power1.out",
         scrollTrigger: {
@@ -34,7 +34,7 @@ const Products = () => {
 
           start: "top -35%",
 
-          end: "bottom 10%",
+          end: "bottom 20%",
           scrub: 2,
         },
       }
@@ -47,7 +47,7 @@ const Products = () => {
       },
       {
         opacity: 1,
-        scale: 1.3,
+        scale: 1.1,
         repeat: -1,
         duration: 1,
         yoyo: true,

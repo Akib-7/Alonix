@@ -21,7 +21,7 @@ const Models = () => {
         scrollTrigger: {
           trigger: ".INSIDE-PARALLAX",
 
-          start: "-top 70%",
+          start: "-top 90%",
           end: "bottom 0%",
           scrub: true,
         },
