@@ -22,64 +22,64 @@ const Navbar = () => {
       handleClose();
     }
   };
-  // useGSAP(() => {
-  //   t1.to(".menuBar", {
-  //     x: 0,
-  //     duration: 0.5,
-  //     ease: "back.out(1.4)",
-  //   })
-  //     .fromTo(
-  //       ".Y-AXIS",
-  //       {
-  //         x: "120%",
-  //       },
-  //       {
-  //         x: 0,
-  //         duration: 0.3,
-  //         ease: "linear",
-  //       }
-  //     )
-  //     .fromTo(
-  //       ".ItemContainer",
-  //       {
-  //         opacity: 0,
-  //         scale: 4,
-  //       },
-  //       {
-  //         opacity: 1,
-  //         scale: 1,
+  useGSAP(() => {
+    t1.to(".menuBar", {
+      x: 0,
+      duration: 0.5,
+      ease: "back.out(1.4)",
+    })
+      .fromTo(
+        ".Y-AXIS",
+        {
+          x: "120%",
+        },
+        {
+          x: 0,
+          duration: 0.3,
+          ease: "linear",
+        }
+      )
+      .fromTo(
+        ".ItemContainer",
+        {
+          opacity: 0,
+          scale: 4,
+        },
+        {
+          opacity: 1,
+          scale: 1,
 
-  //         duration: 0.6,
-  //         stagger: 0.01,
-  //         ease: "circ.out",
-  //       }
-  //     )
-  //     .fromTo(
-  //       ".TOP-items",
-  //       {
-  //         y: -30,
-  //       },
-  //       {
-  //         y: 0,
-  //         delay: 0.4,
-  //         opacity: 1,
-  //       },
-  //       "<"
-  //     )
-  //     .fromTo(
-  //       ".BOTTOM-items",
-  //       {
-  //         opacity: 0,
-  //         y: 30,
-  //       },
-  //       {
-  //         y: 0,
-  //         opacity: 1,
-  //       },
-  //       "<"
-  //     );
-  //   t1.pause();
-  // });
+          duration: 0.6,
+          stagger: 0.01,
+          ease: "circ.out",
+        }
+      )
+      .fromTo(
+        ".TOP-items",
+        {
+          y: -30,
+        },
+        {
+          y: 0,
+          delay: 0.4,
+          opacity: 1,
+        },
+        "<"
+      )
+      .fromTo(
+        ".BOTTOM-items",
+        {
+          opacity: 0,
+          y: 30,
+        },
+        {
+          y: 0,
+          opacity: 1,
+        },
+        "<"
+      );
+    t1.pause();
+  });
 
   return (
     <div className="navbar  ">

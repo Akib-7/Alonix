@@ -69,7 +69,7 @@ const Loader = ({ load }) => {
   }, [isAnimating]);
 
   return (
-    <div className="w-screen h-screen bg-stone-950 flex justify-center items-center relative overflow-hidden">
+    <div className="w-screen h-screen bg-stone-900 flex justify-center items-center relative overflow-hidden">
       <div
         id="progressCount"
         className="w-fit h-fit absolute bottom-[5vh] left-10 "
