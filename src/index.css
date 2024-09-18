@@ -1,8 +1,20 @@
+/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jersey+20&display=swap");
+
+/* Tailwind CSS setup */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Prevent horizontal scrolling */
+html,
+body {
+  overflow-x: hidden; /* Disables horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+}
+
+/* Webkit custom scrollbar styling */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -12,4 +24,9 @@
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background: linear-gradient(to top, #ea3480, #6339c5, #286fe2);
+}
+
+/* Optional: Ensure box-sizing is set globally for better layout control */
+* {
+  box-sizing: border-box;
 }

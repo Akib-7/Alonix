@@ -35,7 +35,7 @@ const Marquee = () => {
       data-scroll-section
       className="  text-white bg-black pb-10 "
     >
-      <div className="flex bg-gradient-to-br   from-pink-700 to-purple-800 via-blue-700 z-10">
+      <div className="flex bg-gradient-to-br  overflow-x-hidden  from-pink-700 to-purple-800 via-blue-700 z-10  sm:-mt-0">
         <div className="flex flex-shrink-0 marquee-container py-[7vh]   sm:rounded-none sm:py-[7vh]    ">
           {marqueeItems.map((item, index) => (
             <h1
