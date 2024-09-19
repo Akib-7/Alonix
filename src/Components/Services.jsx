@@ -40,67 +40,130 @@ const Services = () => {
   ];
 
   useGSAP(() => {
-    const t1 = gsap.timeline();
-    const t2 = gsap.timeline();
-
-    t1.fromTo(
-      ".serviceIMG",
-      {
-        rotateZ: -5,
-        scale: 0.9,
-      },
-      {
-        rotateZ: 10,
-        scale: 1,
-        duration: 3,
-        repeat: -1,
-        yoyo: true,
-        ease: "linear",
-      }
-    );
-
-    t2.fromTo(
-      ".SERVICES_Container:not(:first-child)",
-      {
-        y: 1300,
-        opacity: 0,
-        rotateX: 200,
-        scale: 3.5,
-      },
-      {
-        y: 0,
-        ease: "power1.out",
-        opacity: 1,
-        scale: 1,
-        duration: 500,
-        stagger: 495,
-        rotateX: 0,
-        scrollTrigger: {
-          pin: containerRef.current,
-          start: "top -15%",
-          end: "bottom -10%",
-          scrub: true,
-        },
-      }
-    )
-      .to(
-        ".MAIN",
+    const animation = gsap.matchMedia();
+    animation.add("(min-width:750px)", () => {
+      const t1 = gsap.timeline();
+      const t2 = gsap.timeline();
+      t1.fromTo(
+        ".serviceIMG",
         {
-          scale: 0.7,
-          duration: 20,
-          rotate: 10,
+          rotateZ: -5,
+          scale: 0.9,
+        },
+        {
+          rotateZ: 10,
+          scale: 1,
+          duration: 3,
+          repeat: -1,
+          yoyo: true,
+          ease: "linear",
+        }
+      );
 
+      t2.fromTo(
+        ".SERVICES_Container:not(:first-child)",
+        {
+          y: 1300,
+          opacity: 0,
+          rotateX: 200,
+          scale: 3.5,
+        },
+        {
+          y: 0,
           ease: "power1.out",
+          opacity: 1,
+          scale: 1,
+          duration: 500,
+          stagger: 495,
+          rotateX: 0,
           scrollTrigger: {
-            trigger: ".MAIN",
-            start: "top -23%",
-            end: "bottom top",
+            pin: containerRef.current,
+            start: "top -15%",
+            end: "bottom -10%",
             scrub: true,
           },
         }
-        // Adds the scaling effect after the containers start animating
       )
-      .to(
+        .to(
+          ".MAIN",
+          {
+            scale: 0.7,
+            duration: 20,
+            rotate: 10,
+
+            ease: "power1.out",
+            scrollTrigger: {
+              trigger: ".MAIN",
+              start: "top -23%",
+              end: "bottom top",
+              scrub: true,
+            },
+          }
+          // Adds the scaling effect after the containers start animating
+        )
+        .to(
+          ".MAIN",
+          {
+            scale: 0.7,
+            duration: 20,
+            rotate: 10,
+
+            ease: "power1.out",
+            scrollTrigger: {
+              trigger: ".MAIN",
+              start: "top -23%",
+              end: "bottom top",
+              scrub: true,
+            },
+          }
+          // Adds the scaling effect after the containers start animating
+        );
+    });
+
+    animation.add("(max-width:749px)", () => {
+      const t1 = gsap.timeline();
+      const t2 = gsap.timeline();
+      t1.fromTo(
+        ".serviceIMG",
+        {
+          rotateZ: -5,
+          scale: 0.9,
+        },
+        {
+          rotateZ: 10,
+          scale: 1,
+          duration: 3,
+          repeat: -1,
+          yoyo: true,
+          ease: "linear",
+        }
+      );
+
+      t2.fromTo(
+        ".SERVICES_Container:not(:first-child)",
+        {
+          y: 1300,
+          opacity: 0,
+          rotateX: 200,
+          scale: 3.5,
+        },
+        {
+          y: 0,
+          ease: "power1.out",
+          opacity: 1,
+          scale: 1,
+          duration: 500,
+          stagger: 495,
+          rotateX: 0,
+          scrollTrigger: {
+            pin: containerRef.current,
+
+            start: "top -10%",
+            end: "bottom -10%",
+            scrub: true,
+          },
+        }
+      ).to(
         ".MAIN",
         {
           scale: 0.7,
@@ -110,13 +173,15 @@ const Services = () => {
           ease: "power1.out",
           scrollTrigger: {
             trigger: ".MAIN",
-            start: "top -23%",
-            end: "bottom top",
+            start: "top -50%",
+            end: "bottom 0%",
+
             scrub: true,
           },
         }
         // Adds the scaling effect after the containers start animating
       );
+    });
   });
 
   const pattern = {

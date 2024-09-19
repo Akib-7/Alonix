@@ -63,13 +63,13 @@ const Products = () => {
           rotate: 0,
         },
         {
-          scale: 7.3,
+          scale: 8,
           rotate: 270,
           ease: "power1.out",
           scrollTrigger: {
             pin: parallaxRef.current,
 
-            start: "top -22%%",
+            start: "top -10%",
 
             end: "bottom 20%",
             scrub: 2,
