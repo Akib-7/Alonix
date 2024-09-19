@@ -8,10 +8,11 @@ const Navbar = () => {
   const handleClose = () => {
     // Reverse the timeline when closing
     t1.reverse();
-    document.body.style.overflowY = "visible";
+    document.body.style.overflowY = "auto"; // Re-enable vertical scrolling
   };
 
   const handleMenu = () => {
+    // Disable vertical scrolling when menu is open
     document.body.style.overflowY = "hidden";
     t1.play();
   };

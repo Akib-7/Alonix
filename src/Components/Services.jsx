@@ -136,7 +136,7 @@ const Services = () => {
     <div
       ref={containerRef}
       style={{ zIndex: 50 }}
-      className=" MAIN border-[1px] border-stone-800 text-white flex justify-center bg-black  w-full  rounded-3xl -mt-12 "
+      className=" MAIN border-[1px] border-stone-800 text-white flex justify-center bg-black  w-full  rounded-3xl -mt-12 pb-12"
     >
       <div className=" OUTLINE  w-[90vw] relative border-l-[1px]  border-r-[1px]   border-stone-800">
         <div className="w-full flex items-center justify-center p-7 sm:p-10 border-stone-800 border-b-[1px]">
@@ -146,7 +146,7 @@ const Services = () => {
         </div>
 
         {/* Ensure parent has a height to retain the borders */}
-        <div className="relative  min-h-[100vh]">
+        <div className="relative  min-h-[100vh] ">
           {services.map((service, index) => (
             <div
               key={index}
@@ -154,14 +154,14 @@ const Services = () => {
                 ...(index === 0 ? { transform: "none", opacity: 1 } : {}),
                 top: `${index * 3}vh`,
               }}
-              className={`SERVICES_Container absolute top-0 left-0 w-full h-full flex items-start  pt-1 sm:pt-7 justify-center border-stone-800 ${
+              className={`SERVICES_Container  absolute top-0 left-0 w-full   flex items-start  pt-1 sm:pt-7 justify-center border-stone-800 ${
                 index === 3 ? "border-none" : "border-b-[0px]"
               }   space-y-5  sm:border-b-0`}
             >
               <div className="Wrapper-Background bg-gradient-to-br from-pink-700 via-purple-800 to-blue-700 sm:rounded-[30px] p-[2px] overflow-hidden">
                 <div
                   style={pattern}
-                  className="w-[80vw] SERVICE-INNER bg-black sm:w-[65vw] h-[90vh] sm:h-[80vh] overflow-hidden sm:py-0 sm:rounded-[30px] sm:flex justify-between"
+                  className="w-[80vw] SERVICE-INNER bg-black sm:w-[65vw] h-[85vh] sm:h-[80vh] overflow-hidden sm:py-0 sm:rounded-[30px] sm:flex justify-between"
                 >
                   <div className="content sm:space-y-10">
                     <div

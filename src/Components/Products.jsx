@@ -58,10 +58,10 @@ const Products = () => {
   return (
     <div
       ref={parallaxRef}
-      className="bg-black PARENT overflow-hidden   text-white"
+      className="bg-black PARENT overflow-hidden h-screen  text-white"
     >
-      <div className="PAGE-0 flex  flex-col  justify-center items-center space-y-[15vh] sm:space-y-0">
-        <div className="UPPER-CONTENT  w-full  border-t-[1px] border-stone-800 flex items-center justify-center p-7 ">
+      <div className="PAGE-0 flex  flex-col  justify-center items-center  ">
+        <div className="UPPER-CONTENT   w-full  border-t-[1px] border-stone-800 flex items-center justify-center p-7 ">
           <div className="flex flex-col items-center justify-center space-y-4  sm:w-[50vw] pt-10">
             <h1 className="uppercase text-[10vw] sm:text-[4vw] font-heading">
               AI Pioneers
@@ -73,40 +73,40 @@ const Products = () => {
             </p>
           </div>
         </div>
-        <div className="PARALLAX_CONTAINER  w-[90vw]  h-[100vh] flex items-center justify-center">
-          <div className="relative flex items-center justify-center  w-[60vw] h-[80vh]">
-            <div className="ZOOM-BOX  w-[18vw] h-[25vh] border-[0px] border-stone-900 flex items-center justify-center">
+        <div className="PARALLAX_CONTAINER    w-[90vw]  sm:h-[100vh] flex items-center justify-center">
+          <div className="relative flex items-center  justify-center w-[70vw] sm:w-[60vw] h-[70vh] sm:h-[80vh]">
+            <div className="ZOOM-BOX   w-[18vw] sm:h-[25vh] border-[0px] border-stone-900 flex items-center justify-center">
               <h1 className="ZOOM-BOX-TEXT text-white font-text">Immerse</h1>
             </div>
-            <div className="IMAGE-1 left-3 bottom-[40vh]   absolute w-[18vw] h-[40vh] ">
+            <div className="IMAGE-1  left-3 bottom-[30vh] sm:bottom-[40vh]   absolute w-[18vw] sm:h-[40vh] ">
               <img
                 className="object-contain object-center w-full h-full "
                 src={M1}
                 alt=""
               />
             </div>
-            <div className="IMAGE-2 top-0 left-[21vw]   absolute w-[22vw] h-[25vh] ">
+            <div className="IMAGE-2  sm:top-0 top-[24vh] sm:left-[21vw]   absolute w-[22vw] sm:h-[25vh] ">
               <img
                 className="object-contain object-center w-full h-full "
                 src={M0}
                 alt=""
               />
             </div>
-            <div className="IMAGE-3 right-0 top-[14vw]  absolute w-[19vw] h-[23vh] ">
+            <div className="IMAGE-3  right-3 sm:right-0 sm:top-[14vw] top-[30vh]  absolute w-[19vw] sm:h-[23vh] ">
               <img
                 className="object-contain object-center w-full h-full "
                 src={M4}
                 alt=""
               />
             </div>
-            <div className="IMAGE-4 left-3 bottom-[5vh]   absolute w-[18vw] h-[30vh] ">
+            <div className="IMAGE-4 left-3 bottom-[15vh] sm:bottom-[5vh]   absolute w-[18vw] sm:h-[30vh] ">
               <img
                 className="object-contain object-center w-full h-full "
                 src={M2}
                 alt=""
               />
             </div>
-            <div className="IMAGE-2 bottom-0 left-[21vw]  absolute w-[22vw] h-[25vh] ">
+            <div className="IMAGE-5  bottom-[15vh] sm:bottom-0 sm:left-[21vw] left-[25vw]  absolute w-[22vw] sm:h-[25vh] ">
               <img
                 className="object-contain object-center w-full h-full "
                 src={M5}

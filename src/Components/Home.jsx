@@ -26,50 +26,50 @@ const Home = () => {
     },
   ];
 
-  // useGSAP(() => {
-  //   const t1 = gsap.timeline();
-  //   t1.from(".IMAGE", {
-  //     scale: 0,
-  //     y: 1000,
-  //     opacity: 0,
-  //     duration: 2,
-  //     zIndex: 10,
-  //   });
-  //   t1.from(".TOP-NAV", {
-  //     y: -200,
-  //     duration: 0.5,
-  //   });
-  //   t1.from(".ALONIX-HEADING", {
-  //     opacity: 0,
-  //     scale: 0,
-  //     duration: 0.5,
-  //     zIndex: 50,
-  //     ease: "linear",
-  //   }),
-  //     t1.from(".PARAGRAPH", {
-  //       opacity: 0,
-  //       scale: 0,
-  //       duration: 0.5,
-  //     }),
-  //     t1.from(".EXPLORE", {
-  //       opacity: 0,
-  //       x: 100,
+  useGSAP(() => {
+    const t1 = gsap.timeline();
+    t1.from(".IMAGE", {
+      scale: 0,
+      y: 1000,
+      opacity: 0,
+      duration: 2,
+      zIndex: 10,
+    });
+    t1.from(".TOP-NAV", {
+      y: -200,
+      duration: 0.5,
+    });
+    t1.from(".ALONIX-HEADING", {
+      opacity: 0,
+      scale: 0,
+      duration: 0.5,
+      zIndex: 50,
+      ease: "linear",
+    }),
+      t1.from(".PARAGRAPH", {
+        opacity: 0,
+        scale: 0,
+        duration: 0.5,
+      }),
+      t1.from(".EXPLORE", {
+        opacity: 0,
+        x: 100,
 
-  //       scale: 3,
-  //       duration: 1.5,
-  //       ease: "bounce.out",
-  //     });
-  //   t1.from(
-  //     ".CARDS_Container",
-  //     {
-  //       x: 600,
-  //       delay: 0.3,
-  //       duration: 0.7,
-  //       ease: "back.out(1.9)",
-  //     },
-  //     "<"
-  //   );
-  // });
+        scale: 3,
+        duration: 1.5,
+        ease: "bounce.out",
+      });
+    t1.from(
+      ".CARDS_Container",
+      {
+        x: 600,
+        delay: 0.3,
+        duration: 0.7,
+        ease: "back.out(1.9)",
+      },
+      "<"
+    );
+  });
   return (
     <div
       data-scroll
