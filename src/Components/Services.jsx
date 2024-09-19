@@ -136,7 +136,7 @@ const Services = () => {
     <div
       ref={containerRef}
       style={{ zIndex: 50 }}
-      className=" MAIN border-[1px] border-stone-800 text-white flex justify-center bg-black  w-full  rounded-3xl -mt-12 pb-12"
+      className=" MAIN border-[1px] border-stone-800 text-white flex justify-center bg-black  w-full  rounded-t-3xl sm:rounded-b-2xl -mt-12 pb-12"
     >
       <div className=" OUTLINE  w-[90vw] relative border-l-[1px]  border-r-[1px]   border-stone-800">
         <div className="w-full flex items-center justify-center p-7 sm:p-10 border-stone-800 border-b-[1px]">

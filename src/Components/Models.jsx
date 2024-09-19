@@ -10,24 +10,47 @@ import { useGSAP } from "@gsap/react";
 const Models = () => {
   const tiltRefs = useRef([null]);
   useGSAP(() => {
-    gsap.fromTo(
-      ".card-wrapper",
-      { scale: 0.6 },
-      {
-        scale: 1.2,
+    const animation = gsap.matchMedia();
+    animation.add("(min-width:750px)", () => {
+      gsap.fromTo(
+        ".card-wrapper",
+        { scale: 0.6 },
+        {
+          scale: 1.1,
 
-        stagger: 0.3,
-        ease: "power1.out",
-        scrollTrigger: {
-          trigger: ".INSIDE-PARALLAX",
+          stagger: 0.3,
+          ease: "power1.out",
+          scrollTrigger: {
+            trigger: ".INSIDE-PARALLAX",
 
-          start: "-top 90%",
-          end: "bottom 0%",
-          scrub: true,
-        },
-      }
-      // Adds the scaling effect after the containers start animating
-    );
+            start: "-top 90%",
+            end: "bottom 0%",
+            scrub: true,
+          },
+        }
+        // Adds the scaling effect after the containers start animating
+      );
+    });
+    animation.add("(max-width:749px)", () => {
+      gsap.fromTo(
+        ".card-wrapper",
+        { scale: 0.8 },
+        {
+          scale: 1.2,
+
+          stagger: 0.2,
+          ease: "power1.out",
+          scrollTrigger: {
+            trigger: ".INSIDE-PARALLAX",
+
+            start: "-top 50%",
+            end: "bottom 10%",
+            scrub: true,
+          },
+        }
+        // Adds the scaling effect after the containers start animating
+      );
+    });
   });
   const models = [
     {
@@ -110,15 +133,15 @@ const Models = () => {
   }, []);
 
   return (
-    <div className="h-fit pb-10  bg-black MODELS-CONTAINER text-white">
-      <div className="INSIDE-PARALLAX relative  Products_Container  flex flex-col items-center">
+    <div className="h-fit pb-[20vh] bg-black sm:pb-0  -mt-[58vh] sm:-mt-0 sm:pt-0 pt-[40vh] MODELS-CONTAINER text-white">
+      <div className="INSIDE-PARALLAX relative Products_Container  flex flex-col items-center">
         {models.map((item, index) => (
           <div
             key={index}
             style={{ zIndex: index + 100 }}
-            className="card-wrapper  rounded-2xl   w-[90vw] h-[100vh]  sm:mb-[20vh]  flex justify-center  items-center sm:items-center sm:justify-around"
+            className="card-wrapper    rounded-2xl h-fit  w-[90vw] sm:h-[100vh]  sm:mb-[20vh]  flex justify-center  items-center sm:items-center sm:justify-around"
           >
-            <div className="DETAILS  cursor-pointer sm:w-[45vw] sm:h-[90vh] flex flex-col items-center space-y-7 sm:p-10">
+            <div className="DETAILS hidden sm:visible  cursor-pointer sm:w-[45vw] sm:h-[90vh] sm:flex flex-col items-center space-y-7 sm:p-10">
               <h1 className=" HEADING  bg-gradient-to-br bg-clip-text from-yellow-500 via-red-500 to-purple-700  text-transparent w-fit h-fit text-[6vw] sm:text-[3.5vw] font-bold tracking-wide mb-5 font-heading">
                 {item.title}
               </h1>
@@ -163,9 +186,9 @@ const Models = () => {
             <div
               ref={(el) => (tiltRefs.current[index + 1] = el)}
               style={{ borderRadius: "100% / 20%" }}
-              className="CARD   relative w-[70vw] sm:w-[35vw] h-[50vh] sm:h-[50vh] px-16 flex flex-col items-center pt-[12vh] mt-[40vh]  border-x-[1px] sm:border-x-[1px] border-stone-800   cursor-pointer"
+              className="CARD   relative w-[75vw] sm:w-[35vw] h-[35vh]  sm:h-[50vh] px-16 flex flex-col items-center justify-center sm:justify-normal sm:pt-[12vh] mt-[40vh]  border-x-[1px]  border-stone-800   cursor-pointer"
             >
-              <div className="ImageContainer -top-[43vh]  absolute  z-10 w-[75%] sm:w-[20vw] flex items-center justify-center">
+              <div className="ImageContainer sm:-top-[43vh] -top-[27vh]  absolute  z-10 w-[70%] sm:w-[20vw] flex items-center justify-center">
                 <img
                   className="object-center  rounded-b-[70px] object-cover"
                   src={item.image}
@@ -176,7 +199,7 @@ const Models = () => {
                 <h1 className="text-[6vw] sm:text-[2vw] mb-5 font-heading">
                   {item.title}
                 </h1>
-                <p className="text-[2.2vw] sm:text-[1vw] font-text text-stone-500">
+                <p className="text-[2.4vw] sm:text-[1vw] font-text text-stone-500">
                   {item.description}
                 </p>
               </div>

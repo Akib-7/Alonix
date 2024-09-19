@@ -72,9 +72,9 @@ const Loader = ({ load }) => {
     <div className="w-screen h-screen bg-stone-900 flex justify-center items-center relative overflow-hidden">
       <div
         id="progressCount"
-        className="w-fit h-fit absolute bottom-[5vh] left-10 "
+        className="w-fit h-fit absolute sm:bottom-[5vh] bottom-[10vh] left-10 "
       >
-        <h1 className="text-white tracking-wide text-[4vw] sm:text-[3vw] font-heading">
+        <h1 className="text-white tracking-wide text-[7vw] sm:text-[3vw] font-heading">
           {count}%
         </h1>
       </div>
