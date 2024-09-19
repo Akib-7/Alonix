@@ -92,15 +92,15 @@ const Home = () => {
           {/* <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div> */}
         </div>
 
-        <div className="PARAGRAPH flex justify-center items-center sm:absolute left-10 top-[48vh] w-fit px-16  sm:w-[25vw]  p-1 ">
-          <p className="text-white text-[2.6vw] sm:text-[1vw]  text-center font-text">
+        <div className="PARAGRAPH flex justify-center items-center sm:absolute  left-0 top-[48vh] w-fit px-16 sm:px-11   sm:w-[25vw]  p-1 ">
+          <p className="text-white text-[2.6vw] sm:text-[0.8vw]   font-text">
             Create your own AI assistants using our own pre-trained AI models.
           </p>
         </div>
-        <div className="EXPLORE border-[1px]   border-white rounded-lg shadow-[0px_0px_20px_rgba(255,255,255,0.6)] sm:absolute left-10 top-[60vh]">
+        <div className="EXPLORE border-[1px]   border-white rounded-lg shadow-[0px_0px_20px_rgba(255,255,255,0.6)] sm:absolute left-10 top-[59vh]">
           <button
             onClick={handleExplore}
-            className=" text-white bg-gradient-to-br font-bold from-pink-600 via-purple-800 to-emerald-500 rounded-lg  px-[30vw] sm:px-[2.7vw] py-[2vw] sm:py-[0.8vw] text-[3.1vw] sm:text-[1.2vw] font-text tracking-widest sm:tracking-wider "
+            className=" text-white bg-gradient-to-br font-bold from-pink-600 via-purple-800 to-emerald-500 rounded-lg  px-[30vw] sm:px-[2.7vw] py-[2vw] sm:py-[0.8vw] text-[3.1vw] sm:text-[1vw]  font-text tracking-widest sm:tracking-wider "
           >
             Explore
           </button>

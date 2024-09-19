@@ -58,7 +58,7 @@ const Products = () => {
   return (
     <div
       ref={parallaxRef}
-      className="bg-black PARENT overflow-hidden h-screen  text-white"
+      className="bg-black PARENT overflow-hidden h-screen sm:h-fit text-white"
     >
       <div className="PAGE-0 flex  flex-col  justify-center items-center  ">
         <div className="UPPER-CONTENT   w-full  border-t-[1px] border-stone-800 flex items-center justify-center p-7 ">
