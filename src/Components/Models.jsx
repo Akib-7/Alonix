@@ -111,19 +111,25 @@ const Models = () => {
   ];
 
   useEffect(() => {
-    tiltRefs.current.forEach((ref) => {
-      if (ref) {
-        VanillaTilt.init(ref, {
-          max: 20,
-          speed: 400,
-          scale: 1,
-          glare: true,
-          "max-glare": 0.3,
-        });
-      }
-    });
+    const isMobile = window.innerWidth <= 768; // Adjust based on your mobile breakpoint
+
+    if (!isMobile) {
+      // Only initialize VanillaTilt for non-mobile devices
+      tiltRefs.current.forEach((ref) => {
+        if (ref) {
+          VanillaTilt.init(ref, {
+            max: 20,
+            speed: 400,
+            scale: 1,
+            glare: true,
+            "max-glare": 0.3,
+          });
+        }
+      });
+    }
 
     return () => {
+      // Cleanup VanillaTilt for non-mobile devices
       tiltRefs.current.forEach((ref) => {
         if (ref && ref.vanillaTilt) {
           ref.vanillaTilt.destroy();
