@@ -145,9 +145,8 @@ const Services = () => {
 
           ease: "power1.out",
           scrollTrigger: {
-            markers: true,
             trigger: ".MAIN",
-            start: "bottom 95%",
+            start: "bottom 99%",
 
             scrub: 1,
           },
