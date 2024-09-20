@@ -144,7 +144,7 @@ const Products = () => {
                 alt=""
               />
             </div>
-            <div className="IMAGE-5 bottom-[11vh] sm:bottom-0 sm:left-[21vw] left-[25vw]  absolute w-[22vw] sm:h-[25vh] ">
+            <div className="IMAGE-5  bottom-[11vh] sm:bottom-0 sm:left-[21vw] left-[26vw]  absolute w-[16vw] sm:h-[25vh] ">
               <img
                 className="object-contain object-center w-full h-full "
                 src={M5}

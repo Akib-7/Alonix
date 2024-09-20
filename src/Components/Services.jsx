@@ -140,16 +140,16 @@ const Services = () => {
       ).to(
         ".MAIN",
         {
-          scale: 0.8,
+          scale: 0.9,
           duration: 20,
 
           ease: "power1.out",
           scrollTrigger: {
             markers: true,
             trigger: ".MAIN",
-            start: "bottom 90%",
+            start: "bottom 95%",
 
-            scrub: 2,
+            scrub: 1,
           },
         }
         // Adds the scaling effect after the containers start animating
