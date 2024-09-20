@@ -100,7 +100,7 @@ const Home = () => {
         <div className="EXPLORE border-[1px]   border-white rounded-lg shadow-[0px_0px_20px_rgba(255,255,255,0.6)] sm:absolute left-10 top-[59vh]">
           <button
             onClick={handleExplore}
-            className=" text-white bg-gradient-to-br font-bold from-pink-600 via-purple-800 to-emerald-500 rounded-lg  px-[30vw] sm:px-[2.7vw] py-[2vw] sm:py-[0.8vw] text-[3.1vw] sm:text-[1vw]  font-text tracking-widest sm:tracking-wider "
+            className=" text-white bg-gradient-to-br font-bold from-pink-600 via-purple-800 to-emerald-300 rounded-lg  px-[30vw] sm:px-[2.7vw] py-[2vw] sm:py-[0.8vw] text-[3.1vw] sm:text-[1vw]  font-text tracking-widest sm:tracking-wider "
           >
             Explore
           </button>

@@ -30,3 +30,13 @@ body {
 * {
   box-sizing: border-box;
 }
+body {
+  background-color: rgb(255, 255, 255); /* White for bigger devices */
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+  body {
+    background-color: black; /* Black for smaller devices */
+  }
+}

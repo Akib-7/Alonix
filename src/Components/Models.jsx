@@ -139,7 +139,7 @@ const Models = () => {
   }, []);
 
   return (
-    <div className="h-fit pb-[20vh] bg-black sm:pb-0  -mt-[72vh] sm:-mt-0 sm:pt-0 pt-[54vh] MODELS-CONTAINER text-white">
+    <div className="h-fit pb-[20vh] bg-black sm:pb-0   sm:-mt-0 sm:pt-0 pt-[2vh] MODELS-CONTAINER text-white">
       <div className="INSIDE-PARALLAX relative Products_Container  flex flex-col items-center">
         {models.map((item, index) => (
           <div
