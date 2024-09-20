@@ -137,46 +137,19 @@ const Services = () => {
           yoyo: true,
           ease: "linear",
         }
-      );
-
-      t2.fromTo(
-        ".SERVICES_Container:not(:first-child)",
-        {
-          y: 1300,
-          opacity: 0,
-          rotateX: 200,
-          scale: 3.5,
-        },
-        {
-          y: 0,
-          ease: "power1.out",
-          opacity: 1,
-          scale: 1,
-          duration: 500,
-          stagger: 495,
-          rotateX: 0,
-          scrollTrigger: {
-            pin: containerRef.current,
-
-            start: "top -10%",
-            end: "bottom -10%",
-            scrub: true,
-          },
-        }
       ).to(
         ".MAIN",
         {
-          scale: 0.7,
+          scale: 0.8,
           duration: 20,
-          rotate: 10,
 
           ease: "power1.out",
           scrollTrigger: {
+            markers: true,
             trigger: ".MAIN",
-            start: "top -50%",
-            end: "bottom 0%",
+            start: "bottom 90%",
 
-            scrub: true,
+            scrub: 2,
           },
         }
         // Adds the scaling effect after the containers start animating
@@ -201,9 +174,9 @@ const Services = () => {
     <div
       ref={containerRef}
       style={{ zIndex: 50 }}
-      className=" MAIN border-[1px] border-stone-800 text-white flex justify-center bg-black  w-full  rounded-t-3xl sm:rounded-b-2xl -mt-12 pb-12"
+      className=" MAIN border-[1px]  border-stone-800 text-white flex justify-center bg-black  w-full  rounded-t-3xl sm:rounded-b-2xl -mt-12 pb-12"
     >
-      <div className=" OUTLINE  w-[90vw] relative border-l-[1px]  border-r-[1px]   border-stone-800">
+      <div className=" OUTLINE  w-[90vw] relative border-l-[1px]  border-r-[1px] border-b-[1px]   border-stone-800">
         <div className="w-full flex items-center justify-center p-7 sm:p-10 border-stone-800 border-b-[1px]">
           <h1 className="uppercase text-[10vw] sm:text-[4vw] font-heading">
             Our services
@@ -219,14 +192,14 @@ const Services = () => {
                 ...(index === 0 ? { transform: "none", opacity: 1 } : {}),
                 top: `${index * 3}vh`,
               }}
-              className={`SERVICES_Container  absolute top-0 left-0 w-full   flex items-start  pt-1 sm:pt-7 justify-center border-stone-800 ${
+              className={`SERVICES_Container   sm:absolute top-0 left-0 w-full py-10 sm:py-0  flex items-start  pt-1 sm:pt-7 justify-center border-stone-800 ${
                 index === 3 ? "border-none" : "border-b-[0px]"
               }   space-y-5  sm:border-b-0`}
             >
               <div className="Wrapper-Background bg-gradient-to-br from-pink-700 via-purple-800 to-blue-700 sm:rounded-[30px] p-[2px] overflow-hidden">
                 <div
                   style={pattern}
-                  className="w-[80vw] SERVICE-INNER bg-black sm:w-[65vw] h-[85vh] sm:h-[80vh] overflow-hidden sm:py-0 sm:rounded-[30px] sm:flex justify-between"
+                  className="w-[80vw] SERVICE-INNER bg-black sm:w-[65vw] h-[80vh] sm:h-[80vh] overflow-hidden sm:py-0 sm:rounded-[30px] sm:flex justify-between"
                 >
                   <div className="content sm:space-y-10">
                     <div
@@ -246,9 +219,9 @@ const Services = () => {
                       {service.description}
                     </p>
                   </div>
-                  <div className="image overflow-hidden flex items-center justify-center scale-90 h-[40vh] sm:h-[80vh]">
+                  <div className="image relative sm:overflow-hidden flex items-center sm:items-center justify-center scale-90 h-[35vh] sm:h-[80vh]">
                     <img
-                      className="serviceIMG w-[55vw] sm:w-[35vw] bg-center object-cover"
+                      className="serviceIMG  w-[55vw] sm:w-[35vw] object-center object-cover"
                       src={service.image}
                       alt=""
                     />

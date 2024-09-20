@@ -56,41 +56,41 @@ const Products = () => {
         }
       );
     });
-    animation.add("(max-width:749px)", () => {
-      t1.fromTo(
-        ".PARALLAX_CONTAINER",
-        {
-          rotate: 0,
-        },
-        {
-          scale: 8,
-          rotate: 270,
-          ease: "power1.out",
-          scrollTrigger: {
-            pin: parallaxRef.current,
+    // animation.add("(max-width:749px)", () => {
+    //   t1.fromTo(
+    //     ".PARALLAX_CONTAINER",
+    //     {
+    //       rotate: 0,
+    //     },
+    //     {
+    //       scale: 8,
+    //       rotate: 270,
+    //       ease: "power1.out",
+    //       scrollTrigger: {
+    //         pin: parallaxRef.current,
 
-            start: "top -10%",
+    //         start: "top -10%",
 
-            end: "bottom 20%",
-            scrub: 2,
-          },
-        }
-      );
-      t2.fromTo(
-        ".ZOOM-BOX-TEXT",
-        {
-          opacity: 0,
-          scale: 1,
-        },
-        {
-          opacity: 1,
-          scale: 1.1,
-          repeat: -1,
-          duration: 1,
-          yoyo: true,
-        }
-      );
-    });
+    //         end: "bottom 20%",
+    //         scrub: 2,
+    //       },
+    //     }
+    //   );
+    //   t2.fromTo(
+    //     ".ZOOM-BOX-TEXT",
+    //     {
+    //       opacity: 0,
+    //       scale: 1,
+    //     },
+    //     {
+    //       opacity: 1,
+    //       scale: 1.1,
+    //       repeat: -1,
+    //       duration: 1,
+    //       yoyo: true,
+    //     }
+    //   );
+    // });
   });
 
   return (
