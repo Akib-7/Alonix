@@ -221,7 +221,7 @@ const Services = () => {
                       {service.description}
                     </h2>
                   </div>
-                  <div className="image bg-red-950 relative sm:overflow-hidden flex items-center sm:items-center justify-center scale-90 h-[35vh] sm:h-[80vh]">
+                  <div className="image relative sm:overflow-hidden flex items-center sm:items-center justify-center scale-90 h-[30vh] sm:h-[80vh]">
                     <img
                       className="serviceIMG  w-[55vw] sm:w-[35vw] object-center object-cover"
                       src={service.image}
