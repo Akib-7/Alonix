@@ -212,14 +212,14 @@ const Services = () => {
                       </h1>
                     </div>
                     <h1
-                      style={{ lineHeight: "2.5rem", wordSpacing: "-0.3rem" }}
-                      className="font-text sm:font-semibold mt-10 sm:mt-0 pl-5 sm:pl-16 tracking-[-0.5vw] sm:tracking-tighter text-[4vh] sm:text-[4.5vh]"
+                      style={{ lineHeight: "2.2rem" }}
+                      className="font-text sm:font-semibold mt-10 sm:mt-0 pl-5 sm:pl-16 tracking-[-0.5vw] sm:tracking-tighter leading-tight text-[4vh] sm:text-[4.5vh]"
                     >
                       {service.title}
                     </h1>
-                    <p className="text-[3.5vw]  tracking-tighter pt-10 pl-5 sm:pl-16 sm:text-[1.1vw] sm:w-[30vw] font-text text-stone-500">
+                    <h1 className="text-sm mt-7 px-5 sm:pl-16 sm:text-[1.1vw] sm:w-[30vw] h-fit font-text text-stone-500">
                       {service.description}
-                    </p>
+                    </h1>
                   </div>
                   <div className="image relative sm:overflow-hidden flex items-center sm:items-center justify-center scale-90 h-[35vh] sm:h-[80vh]">
                     <img
