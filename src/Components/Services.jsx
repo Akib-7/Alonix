@@ -26,7 +26,7 @@ const Services = () => {
       image: S6,
     },
     {
-      title: "Model Fine-Tuning & Optimization",
+      title: "Model Optimization",
       description:
         "Improve the accuracy and efficiency of pre-trained AI models with our fine-tuning and optimization services. We adjust model parameters to better align with your data and objectives, ensuring they perform at their best. Get maximum value from existing models with minimal re-training effort.",
       image: S3,
@@ -205,7 +205,7 @@ const Services = () => {
                       style={{
                         clipPath: "polygon(0 0, 100% 0, 80% 100%, 0% 100%)",
                       }}
-                      className="ServiceNumber sm:-mt-[5px] flex items-center justify-start sm:justify-center w-[20vw] sm:w-[10vw] h-[10vh] sm:rotate-90 bg-gradient-to-br from-pink-700 via-purple-800 to-blue-700"
+                      className="ServiceNumber overflow-hidden sm:-mt-[5px] flex items-center justify-start sm:justify-center w-[20vw] sm:w-[10vw] h-[10vh] sm:rotate-90 bg-gradient-to-br from-pink-700 via-purple-800 to-blue-700"
                     >
                       <h1 className="font-text pl-5 sm:pl-0 sm:-rotate-90 font-bold text-lg sm:text-base tracking-tighter">
                         S/{index + 1}
@@ -217,11 +217,11 @@ const Services = () => {
                     >
                       {service.title}
                     </h1>
-                    <h2 className="text-[3vw] mt-7 px-5 sm:pl-16 sm:text-[1.1vw] overflow-hidden break-words sm:w-[30vw] h-fit font-text text-stone-500">
+                    <h2 className="text-[3.1vw] mt-7 px-5 sm:pl-16 sm:text-[1.1vw] overflow-hidden   sm:w-[30vw] h-fit font-text text-stone-500 mx-2">
                       {service.description}
                     </h2>
                   </div>
-                  <div className="image relative sm:overflow-hidden flex items-center sm:items-center justify-center scale-90 h-[35vh] sm:h-[80vh]">
+                  <div className="image bg-red-950 relative sm:overflow-hidden flex items-center sm:items-center justify-center scale-90 h-[35vh] sm:h-[80vh]">
                     <img
                       className="serviceIMG  w-[55vw] sm:w-[35vw] object-center object-cover"
                       src={service.image}

@@ -13,7 +13,7 @@ const Members = () => {
   // Handle hover enter
   const handleMouseEnter = (index) => {
     gsap.to(cardRefs.current[index].querySelector(".Avatar"), {
-      x: "20vw",
+      x: "25vw",
       opacity: 1,
       duration: 0.7,
       ease: "power1.out",
@@ -75,7 +75,7 @@ const Members = () => {
               >
                 {item.title}
               </p>
-              <div className="Avatar scale-50 opacity-0 left-16 w-[20vw] sm:w-[140px] h-[15vh] sm:h-[140px] absolute overflow-hidden   rounded-full">
+              <div className="Avatar scale-50 opacity-0 left-16 w-[50px] sm:w-[140px] h-[50px] sm:h-[140px] absolute overflow-hidden   rounded-full">
                 <img
                   className="object-contain object-center"
                   src={item.image}
