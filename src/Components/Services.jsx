@@ -217,9 +217,9 @@ const Services = () => {
                     >
                       {service.title}
                     </h1>
-                    <h1 className="text-sm mt-7 px-5 sm:pl-16 sm:text-[1.1vw] overflow-hidden break-words sm:w-[30vw] h-fit font-text text-stone-500">
+                    <h2 className="text-sm mt-7 px-5 sm:pl-16 sm:text-[1.1vw] overflow-hidden break-words sm:w-[30vw] h-fit font-text text-stone-500">
                       {service.description}
-                    </h1>
+                    </h2>
                   </div>
                   <div className="image relative sm:overflow-hidden flex items-center sm:items-center justify-center scale-90 h-[35vh] sm:h-[80vh]">
                     <img
