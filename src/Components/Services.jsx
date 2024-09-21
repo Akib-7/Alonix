@@ -211,10 +211,13 @@ const Services = () => {
                         S/{index + 1}
                       </h1>
                     </div>
-                    <h1 className="font-text sm:font-semibold mt-10 sm:mt-0 pl-5 sm:pl-16 tracking-[0.01vw] text-[4vh] sm:text-[4.5vh]">
+                    <h1
+                      style={{ lineHeight: "2.5rem", wordSpacing: "-0.3rem" }}
+                      className="font-text sm:font-semibold mt-10 sm:mt-0 pl-5 sm:pl-16 tracking-[-0.5vw] sm:tracking-tighter text-[4vh] sm:text-[4.5vh]"
+                    >
                       {service.title}
                     </h1>
-                    <p className="text-[2.5vw] pl-5 sm:pl-16 sm:text-[1.1vw] sm:w-[30vw] font-text text-stone-500">
+                    <p className="text-[3.5vw]  tracking-tighter pt-10 pl-5 sm:pl-16 sm:text-[1.1vw] sm:w-[30vw] font-text text-stone-500">
                       {service.description}
                     </p>
                   </div>
