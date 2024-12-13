@@ -16,7 +16,7 @@ const Loader = ({ load }) => {
     }
   });
   useEffect(() => {
-    if (isAnimating) {
+    if (true) {
       const tl = gsap.timeline({
         onComplete: () => {
           load(); // Trigger the load function when the animation completes
